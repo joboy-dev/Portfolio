@@ -67,7 +67,6 @@
     background-color: var(--primary-color);
     border-radius: 10px;
     color: var(--secondary-color);
-    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,6 +75,7 @@
 
 .about-me p {
     font-size: 0.8rem;
+    text-align: center;
 }
 
 /* --------------------------------------------------- */
@@ -92,6 +92,43 @@
     gap: 20px;
 }
 
+.Home .projects a.btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 40px 0;
+}
+
+
+/* --------------------------------------------------- */
+/* CONTACT SECTION */
+/* --------------------------------------------------- */
+
+.Home .contact {
+    height: fit-content;
+}
+
+.Home .contact .contact-me {
+    height: fit-content;
+    width: 100%;
+    padding: 150px 150px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.contact-me a.btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 
 
 /* --------------------------------------------------- */

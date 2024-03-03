@@ -2,20 +2,21 @@
     height: fit-content;
     width: 100%;
     background-color: var(--secondary-color);
-    box-shadow: var(--light-box-shaodw);
+    box-shadow: var(--light-box-shadow);
     border-radius: 10px;
 }
 
 .ProjectCard.dark {
-    box-shadow: var(--dark-box-shaodw);
+    box-shadow: var(--dark-box-shadow);
 }
 
 .ProjectCard:hover {
-    rotate: 2deg;
+    scale: 1.05;
+    rotate: -2deg;
 }
 
 .ProjectCard .project-img {
-    height: 200px;
+    height: 250px;
     width: 100%;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
@@ -34,16 +35,16 @@
 }
 
 .ProjectCard .details h1 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
 .ProjectCard .details p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
-.ProjectCard  .details a.btn {
+.ProjectCard .details a.btn {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
