@@ -1,0 +1,51 @@
+.ProjectCard {
+    height: fit-content;
+    width: 100%;
+    background-color: var(--secondary-color);
+    box-shadow: var(--light-box-shaodw);
+    border-radius: 10px;
+}
+
+.ProjectCard.dark {
+    box-shadow: var(--dark-box-shaodw);
+}
+
+.ProjectCard:hover {
+    rotate: 2deg;
+}
+
+.ProjectCard .project-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.project-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ProjectCard .details {
+    padding: 20px;
+    color: var(--primary-color);
+}
+
+.ProjectCard .details h1 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.ProjectCard .details p {
+    font-size: 0.7rem;
+}
+
+.ProjectCard  .details a.btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 20px 0;
+}

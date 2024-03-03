@@ -1,13 +1,69 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--trnasition);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --dark-background-color: #0C1618;
+  --light-background-color: #F1F1F1;
+  --dark-text-color: #F1F1F1;
+  --light-text-color: #0C1618;
+  --primary-color: #004643;
+  --secondary-color: #d8e2dc;
+  --trnasition: 0.3s ease-in;
+  --padding: 3% 7%;
+  --light-box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  --dark-box-shadow: 4px 4px 6px rgba(255, 255, 255, 0.5);
+}
+
+html {
+  font-size: 30px;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+section {
+  padding: var(--padding);
+  width: 100%;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+/* HORIZONTAL LINE */
+.hr {
+  height: 2px;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+/* A TAG BUTTON */
+a.btn {
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: var(--light-box-shadow);
+  display: inline-block;
+}
+
+a.btn:hover {
+  box-shadow: none;
 }
