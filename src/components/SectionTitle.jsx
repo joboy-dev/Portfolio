@@ -1,10 +1,15 @@
 import './SectionTitle.css'
+import Icon from './Icon'
 
-export default function SectionTitle({iconName, title}) {
+import useTheme from '../hooks/useTheme'
+
+export default function SectionTitle({faIcon, iconSize=50, title}) {
+  const { mode } = useTheme()
+
   return (
-    <div className='SectionTitle'>
+    <div className={`SectionTitle ${mode}`}>
         <div className="icon">
-            <img src={`assets/icons/${iconName}_icon_light_mode.png`} alt="icon" />
+            <Icon icon={faIcon} size={iconSize} />
         </div>
 
         <p>{ title }</p>

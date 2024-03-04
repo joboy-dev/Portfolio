@@ -3,16 +3,11 @@
 /* --------------------------------------------------- */
 
 .Home .hero {
-    height: 100dvh;
     background: linear-gradient(rgba(122, 122, 122, 0.3), rgb(255, 255, 255, 0.3)), url('../../../public/assets/images/home-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    color: var(--light-text-color);
+}
+
+.Home .hero.dark {
+    background: linear-gradient(rgba(46, 67, 71, 0.7), rgb(12, 22, 24, 0.7)), url('../../../public/assets/images/home-bg.jpg');
 }
 
 .info {
@@ -71,6 +66,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--light-box-shadow);
+}
+
+.Home .about .about-me.dark {
+    box-shadow: var(--dark-box-shadow);
 }
 
 .about-me p {
@@ -118,6 +118,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: var(--light-box-shadow);
+}
+
+.Home .contact .contact-me.dark {
+    box-shadow: var(--dark-box-shadow);
 }
 
 .contact-me p {
@@ -128,17 +133,4 @@
 .contact-me a.btn {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-}
-
-
-/* --------------------------------------------------- */
-/* DARK MODE */
-/* --------------------------------------------------- */
-
-.Home .hero.dark {
-    background: linear-gradient(rgba(46, 67, 71, 0.7), rgb(12, 22, 24, 0.7)), url('../../../public/assets/images/home-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--dark-text-color);
 }

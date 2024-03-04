@@ -1,6 +1,8 @@
 import './App.css';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
+import useTheme from './hooks/useTheme';
+
 // Components
 import Navbar from './components/Navbar';
 
@@ -11,8 +13,10 @@ import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
 
 export default function App() {
+  const { mode } = useTheme()
+
   return (
-    <div className="App">
+    <div className={`App ${mode}`}>
       <BrowserRouter>
         <Navbar />
 

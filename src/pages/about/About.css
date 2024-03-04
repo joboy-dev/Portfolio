@@ -1,0 +1,76 @@
+.About .hero {
+    background: linear-gradient(rgba(122, 122, 122, 0.3), rgb(255, 255, 255, 0.3)), url('../../../public/assets/images/about-bg.jpg');
+    text-align: center;
+}
+
+.About .hero.dark {
+    background: linear-gradient(rgba(46, 67, 71, 0.7), rgb(12, 22, 24, 0.7)), url('../../../public/assets/images/about-bg.jpg');
+}
+
+/* --------------------------------------------------- */
+/* ABOUT ME SECTION */
+/* --------------------------------------------------- */
+
+.about-me {
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--light-text-color);
+}
+
+.about-me.dark {
+    color: var(--dark-text-color);
+}
+
+.about-me .img-container {
+    height: 70dvh;
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-me .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-me .content {
+    width: 55%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.about-me .content h1 {
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.about-me .content h2 {
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.about-me .content p {
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+.about-me .content a.btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+/* --------------------------------------------------- */
+/* ADDITIONAL INFO SECTION */
+/* --------------------------------------------------- */
+
+.additional-info {
+    height: fit-content;
+}

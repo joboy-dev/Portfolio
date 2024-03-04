@@ -12,6 +12,7 @@ nav {
     padding: 40px 30px;
     box-shadow: var(--light-box-shadow);
     overflow-y: auto;
+    animation: slideIn 1s linear;
 }
 
 nav.dark {
@@ -24,6 +25,8 @@ nav .img-container {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid var(--secondary-color);
+    animation: fadeIn 0.5s linear 1s;
+    animation-fill-mode: backwards;
 }
 
 nav .img-container img {
@@ -37,6 +40,8 @@ nav h2 {
     font-size: 0.8rem;
     text-align: center;
     font-weight: normal;
+    animation: fadeIn 0.5s linear 1s;
+    animation-fill-mode: backwards;
 }
 
 nav h2 span {
@@ -52,11 +57,11 @@ nav .socials {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    animation: fadeIn 0.5s linear 1.2s;
+    animation-fill-mode: backwards;
 }
 
 .icon {
-    height: 100%;
-    width: 33%;
     background-color: var(--secondary-color);
     border-radius: 50%;
     display: flex;
@@ -64,14 +69,11 @@ nav .socials {
     justify-content: center;
 }
 
-.icon img {
-    height: 50px;
-    width: 50px;
-}
-
 nav .links {
     height: fit-content;
     width: 100%;
+    animation: fadeIn 0.5s linear 1.4s;
+    animation-fill-mode: backwards;
 }
 
 .link {
@@ -85,13 +87,8 @@ nav .links {
 }
 
 .link .icon {
-    width: 50px;
-    height: 50px;
-}
-
-.link .icon img {
-    width: 60%;
-    height: 60%;
+    width: 40px;
+    height: 40px;
 }
 
 .link a {
@@ -100,8 +97,12 @@ nav .links {
     font-size: 0.7rem;
 }
 
+.link a:hover {
+    font-weight: 700;
+}
+
 .link a.active {
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .download-button {
@@ -116,6 +117,8 @@ nav .links {
     border-radius: 10px;
     box-shadow: var(--light-box-shadow);
     cursor: pointer;
+    animation: fadeIn 0.5s linear 1.6s;
+    animation-fill-mode: backwards;
 }
 
 .download-button:hover {
@@ -155,4 +158,23 @@ nav .links {
     text-align: center;
     font-weight: 600;
     color: var(--secondary-color);
+}
+
+/* Dark and light mode toggle */
+nav .mode {
+    background-color: var(--light-background-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+nav .mode.dark {
+    background-color: var(--dark-background-color);
 }
