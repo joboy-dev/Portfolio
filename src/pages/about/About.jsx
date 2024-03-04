@@ -1,5 +1,5 @@
 import './About.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink, Routes, Route } from 'react-router-dom'
 
 import useTheme from '../../hooks/useTheme'
 
@@ -38,9 +38,17 @@ export default function About() {
       <section className="additional-info">
         <SectionTitle faIcon={faInfoCircle} title='Additional Info' />
         <div className="nav-links">
-
+          <NavLink>Experience</NavLink>
+          <NavLink>Education</NavLink>
+          <NavLink>Skills</NavLink>
+          <NavLink>Certification</NavLink>
+          <NavLink>Awards</NavLink>
         </div>
 
+        <div className="info-body">
+
+
+        </div>
       </section>
 
     </div>
