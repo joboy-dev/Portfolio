@@ -1,11 +1,28 @@
 import './About.css'
-import { Link, NavLink, Routes, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import useTheme from '../../hooks/useTheme'
 
 import HeroSection from '../../components/HeroSection'
 import SectionTitle from '../../components/SectionTitle'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+
+import Tabbar from '../../components/TabBar'
+import Experience from './Experience'
+import Skills from './Skills'
+import Certifications from './Certifications'
+import Education from './Education'
+import Awards from './Awards'
+
+// Tabs for the tab bar component
+const tabs = [
+  { title: 'Experience',content: <Experience /> },
+  { title: 'Skills', content: <Skills /> },
+  { title: 'Certifications', content: <Certifications /> },
+  { title: 'Education', content: <Education /> },
+  { title: 'Awards', content: <Awards /> },
+]
+
 
 export default function About() {
   const { mode } = useTheme()
@@ -37,18 +54,7 @@ export default function About() {
 
       <section className="additional-info">
         <SectionTitle faIcon={faInfoCircle} title='Additional Info' />
-        <div className="nav-links">
-          <NavLink>Experience</NavLink>
-          <NavLink>Education</NavLink>
-          <NavLink>Skills</NavLink>
-          <NavLink>Certification</NavLink>
-          <NavLink>Awards</NavLink>
-        </div>
-
-        <div className="info-body">
-
-
-        </div>
+        <Tabbar tabs={tabs} />
       </section>
 
     </div>

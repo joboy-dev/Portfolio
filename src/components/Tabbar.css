@@ -1,0 +1,33 @@
+.Tabbar {
+    height: fit-content;
+    width: 100%;
+}
+
+.Tabbar .tab-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.tab-buttons button {
+    height: 45px;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-buttons button.active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.Tabbar .content {
+    height: fit-content;
+    padding: var(--padding);
+}
