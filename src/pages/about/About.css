@@ -28,6 +28,8 @@
     width: 40%;
     border-radius: 10px;
     overflow: hidden;
+    /* animation: fadeScale 1s linear 2s;
+    animation-fill-mode: backwards; */
 }
 
 .about-me .img-container img {
@@ -44,6 +46,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px;
+    /* animation: fadeSlideDown 1s linear 2s;
+    animation-fill-mode: backwards; */
 }
 
 .about-me .content h1 {

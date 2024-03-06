@@ -1,0 +1,45 @@
+.SmallCard {
+    
+}
+
+/* .SmallCard .card {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: var(--light-box-shadow);
+    padding: 10px;
+}
+
+.card.dark {
+    box-shadow: var(--dark-box-shadow);
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.card p {
+    text-align: center;
+    font-size: 0.5rem;
+    font-weight: normal;
+}
+
+.card-img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */

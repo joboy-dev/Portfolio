@@ -15,8 +15,8 @@ export default function HeroSection({children, height=100, textColor}) {
             backgroundPosition: 'center',
             gap: '50px',
             color: textColor ?? (mode === 'light' ? '#0C1618' : '#F1F1F1'),
-            animation: 'fadeIn 1s linear 2s',
-            animationFillMode: 'backwards',
+            // animation: 'fadeIn 1s linear 2s',
+            // animationFillMode: 'backwards',
         }}>
             { children }
         </section>

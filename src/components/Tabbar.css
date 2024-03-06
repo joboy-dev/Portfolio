@@ -5,6 +5,7 @@
 
 .Tabbar .tab-buttons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
@@ -28,6 +29,7 @@
 }
 
 .Tabbar .content {
-    height: fit-content;
-    padding: var(--padding);
+    height: 70vh;
+    overflow-y: auto;
+    padding: 20px 40px;
 }

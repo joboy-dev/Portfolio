@@ -1,5 +1,6 @@
 import './Home.css'
 import { Link } from 'react-router-dom'
+import 'aos/dist/aos.css'
 
 import useTheme from '../../hooks/useTheme'
 
@@ -18,13 +19,13 @@ export default function Home() {
   return (
     <div className='Home'>
       <HeroSection height={100}>
-        <div className="info">
+        <div className="info" data-aos='fade-down'>
             <h1>ADEGBEHINGBE, <span>Oluwakorede Joseph</span></h1>
             <p>I am a <span>Software Developer</span></p>
           </div>
 
-          <div className="img-container">
-            <img src="assets/images/joseph.jpg" alt="my pic" />
+          <div className="img-container" data-aos='fade-right'>
+            <img src="assets/images/joseph.jpg" alt="my pic" loading='lazy'/>
         </div>
       </HeroSection>
 
@@ -40,7 +41,6 @@ export default function Home() {
 
           <Link className='btn' to={'/about'}>See more</Link>
         </div>
-
       </section>
       <div className="hr"></div>
 

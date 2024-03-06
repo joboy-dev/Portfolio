@@ -23,8 +23,8 @@
 }
 
 .service-card:hover {
-    scale: 1.05;
-    rotate: 2deg;
+    translate: -10px;
+    scale: 1.02;
 }
 
 .service-card .service-img {

@@ -1,0 +1,114 @@
+.Contact .hero {
+    background: linear-gradient(rgba(122, 122, 122, 0.3), rgb(255, 255, 255, 0.3)), url('../../../public/assets/images/contact-bg.jpg');
+    text-align: center;
+}
+
+.Contact .hero.dark {
+    background: linear-gradient(rgba(46, 67, 71, 0.7), rgb(12, 22, 24, 0.7)), url('../../../public/assets/images/contact-bg.jpg');
+}
+
+.contact-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: var(--padding);
+    gap: 40px;
+}
+
+.contact-content h1 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.contact-content .contact-details {
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: var(--light-box-shadow);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+
+.contact-details.dark {
+    box-shadow: var(--dark-box-shadow);
+}
+
+.contact-details p {
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 60px;
+}
+
+.contact-details a {
+    color: var(--secondary-color);
+}
+
+.contact-details a:hover {
+    text-decoration: none;
+}
+
+.contact-content form {
+    width: 50%;
+    color: var(--light-text-color);
+}
+
+.contact-content form.dark {
+    color: var(--dark-text-color);
+}
+
+form label span {
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+form label input {
+    height: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 0.6rem;
+    outline: none;
+    border: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+form label input:focus {
+    border: 1px solid var(--primary-color);
+}
+
+form textarea {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    font-size: 0.6rem;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    font-family: 'Raleway';
+}
+
+form textarea:focus {
+    border: 1px solid var(--primary-color);
+}
+
+form button {
+    height: 50px;
+    width: 40%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: var(--light-box-shadow);
+    border: none;
+    margin: 20px 0;
+    font-size: 0.7rem;
+}

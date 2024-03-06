@@ -1,5 +1,7 @@
 import './App.css';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import useTheme from './hooks/useTheme';
 
@@ -11,9 +13,16 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
+import { useEffect } from 'react';
 
 export default function App() {
   const { mode } = useTheme()
+
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+    })
+  })
 
   return (
     <div className={`App ${mode}`}>

@@ -12,7 +12,6 @@ export default function Tabbar({ tabs }) {
     // Function to handle tab selection
     const handleTabClick = function(index) {
         setCurrentIndex(index)
-        console.log(index);
     }
 
     return (

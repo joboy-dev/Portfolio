@@ -1,0 +1,8 @@
+.Projects .hero {
+    background: linear-gradient(rgba(122, 122, 122, 0.3), rgb(255, 255, 255, 0.3)), url('../../../public/assets/images/projects-bg.jpg');
+    text-align: center;
+}
+
+.Projects .hero.dark {
+    background: linear-gradient(rgba(46, 67, 71, 0.7), rgb(12, 22, 24, 0.7)), url('../../../public/assets/images/projects-bg.jpg');
+}

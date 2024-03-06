@@ -9,13 +9,13 @@ export default function ProjectCard() {
   return (
     <div className={`ProjectCard ${mode}`}>
       <div className="project-img">
-        <img src="assets/images/project-sample.jpg" alt="" />
+        <img src="assets/images/project-sample.jpg" alt="" loading='' />
       </div>
 
       <div className="details">
         <h1>Project name</h1>
         <p>Description...</p>
-        <Link className="btn">View</Link>
+        <Link className="btn">View Project</Link>
       </div>
     </div>
   )
