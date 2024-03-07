@@ -112,3 +112,7 @@ form button {
     margin: 20px 0;
     font-size: 0.7rem;
 }
+
+form button:hover {
+    box-shadow: none;
+}
