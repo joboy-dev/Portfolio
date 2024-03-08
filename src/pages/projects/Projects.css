@@ -6,3 +6,52 @@
 .Projects .hero.dark {
     background: linear-gradient(rgba(46, 67, 71, 0.7), rgb(12, 22, 24, 0.7)), url('../../../public/assets/images/projects-bg.jpg');
 }
+
+.projects-container {
+    height: fit-content;
+    width: 100%;
+    padding: var(--padding);
+}
+
+.projects-container .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.head .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    color: var(--light-text-color);
+}
+
+.head .title.dark {
+    color: var(--dark-text-color);
+}
+
+.head .title h1 {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.head form select {
+    height: 50px;
+    width: 25dvw;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 0.7rem;
+}
+
+.all-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}

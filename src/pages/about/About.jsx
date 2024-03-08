@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import useTheme from '../../hooks/useTheme'
 
 import HeroSection from '../../components/HeroSection'
-import SectionTitle from '../../components/SectionTitle'
+import SectionTitle from '../../components/SectionTitle/SectionTitle'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 
-import Tabbar from '../../components/TabBar'
+import Tabbar from '../../components/Tabbar/TabBar'
 import Experience from './Experience'
 import Skills from './Skills'
 import Certifications from './Certifications'

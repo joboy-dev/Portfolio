@@ -1,8 +1,8 @@
 import './ServiceList.css'
-import Icon from './Icon'
-import { services } from '../data/services'
+import Icon from '../Icon'
+import { services } from '../../data/services'
 
-import useTheme from '../hooks/useTheme'
+import useTheme from '../../hooks/useTheme'
 
 export default function ServiceList() {
   const { mode } = useTheme()
@@ -10,7 +10,7 @@ export default function ServiceList() {
   return (
     <div className="ServiceList">
       {services.map((service) => (
-        <div className={`service-card ${mode}`}>
+        <div key={service.serviceName} className={`service-card ${mode}`}>
           <div className="service-img">
               <Icon icon={service.icon} size={100} color='#d8e2dc' />
           </div>

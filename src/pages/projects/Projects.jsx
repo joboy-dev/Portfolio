@@ -1,12 +1,17 @@
 import './Projects.css'
+import { faCode, faFolder } from '@fortawesome/free-solid-svg-icons'
+import { useRef } from 'react'
 
 import HeroSection from '../../components/HeroSection'
+import SectionTitle from '../../components/SectionTitle/SectionTitle'
+import ProjectCard from '../../components/cards/ProjectCard'
 import Icon from '../../components/Icon'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
 import useTheme from '../../hooks/useTheme'
+import { projects } from '../../data/projects'
 
 export default function Projects() {
   const { mode } =  useTheme()
+  const filterValue = useRef()
   return (
     <div className={`Projects ${mode}`}>
       <HeroSection height={60}>
@@ -17,6 +22,23 @@ export default function Projects() {
           <p className='hero-subtitle'>Feel free to take a look</p>
         </div>
       </HeroSection>
+
+      <div className="projects-container">
+        <div className="head">
+          <SectionTitle faIcon={faFolder} title='ALL PROJECTS' />
+
+          <form onSubmit={() => {}}>
+            <select ref={filterValue}>
+              <option value="1">One</option>
+            </select>
+          </form>
+        </div>
+        <div className="all-projects">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={''} />
+            ))}
+        </div>
+        </div>
     </div>
   )
 }

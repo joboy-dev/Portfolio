@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import useTheme from '../../hooks/useTheme'
 
-export default function ProjectCard() {
+export default function ProjectCard({id, projectName, overview, coverPicture}) {
   const { mode } = useTheme()
 
   return (
@@ -13,9 +13,9 @@ export default function ProjectCard() {
       </div>
 
       <div className="details">
-        <h1>Project name</h1>
-        <p>Description...</p>
-        <Link className="btn">View Project</Link>
+        <h1>{ projectName }</h1>
+        <p>{ overview.substring(0, 100) }...</p>
+        <Link className="btn" to={`/projects/${id}`}>View Project</Link>
       </div>
     </div>
   )

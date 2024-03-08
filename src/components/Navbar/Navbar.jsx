@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom'
 
 import './Navbar.css'
-import Icon from './Icon'
+import Icon from '../Icon'
 import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faFolder, faPhone, faDownload, faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
-import useTheme from '../hooks/useTheme'
+import useTheme from '../../hooks/useTheme'
 
 export default function Navbar() {
     // Get theme details
@@ -17,7 +17,7 @@ export default function Navbar() {
     return (
         <nav className={`${mode}`}>
             <div className="img-container">
-                <img src='assets/images/joseph.jpg' alt="my pic"/>
+                <img src='assets/images/joseph.jpg' alt="" loading='lazy' />
             </div>
 
             <div className={`mode ${mode}`} onClick={handleModeChange}>
@@ -82,11 +82,6 @@ export default function Navbar() {
                 </div>
                 <NavLink to='assets/cv.pdf' download='Adegbehingbe Oluwakorede Joseph Resume' target='_blank'>Resume</NavLink>
             </div>
-
-            <div className="footer">
-                <p>&copy; { new Date().getFullYear() }. Joboy-dev</p>
-            </div>
-
         </nav>
     )
 }
