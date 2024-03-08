@@ -1,6 +1,6 @@
 import './Projects.css'
 import { faCode, faFolder } from '@fortawesome/free-solid-svg-icons'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 
 import HeroSection from '../../components/HeroSection'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
@@ -12,6 +12,12 @@ import { projects } from '../../data/projects'
 export default function Projects() {
   const { mode } =  useTheme()
   const filterValue = useRef()
+  const [showAllProjects, setShowAllProjects] = useState(false)
+
+  const showAll = function() {
+    setShowAllProjects(true)
+  }
+
   return (
     <div className={`Projects ${mode}`}>
       <HeroSection height={60}>
@@ -34,9 +40,13 @@ export default function Projects() {
           </form>
         </div>
         <div className="all-projects">
-            {projects.map((project) => (
+            {showAllProjects ? projects.map((project) => (
+              <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={''} />
+            )) : projects.slice(0, 6).map((project) => (
               <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={''} />
             ))}
+
+            {!showAllProjects && <button onClick={showAll}>Load more</button>}
         </div>
         </div>
     </div>

@@ -55,3 +55,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.all-projects button {
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    border: none;
+    font-size: 0.7rem;
+}
+
+.all-projects button:hover {
+    scale: 1.02;
+}
