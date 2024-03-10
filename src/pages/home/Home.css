@@ -58,7 +58,7 @@
 .Home .about .about-me {
     height: fit-content;
     width: 100%;
-    padding: 150px 60px;
+    padding: 80px 60px;
     background-color: var(--primary-color);
     border-radius: 10px;
     color: var(--secondary-color);
@@ -79,7 +79,7 @@
 }
 
 /* --------------------------------------------------- */
-/* ABOUT SECTION */
+/* PROJECTS SECTION */
 /* --------------------------------------------------- */
 
 .Home .projects {
@@ -110,7 +110,7 @@
 .Home .contact .contact-me {
     height: fit-content;
     width: 100%;
-    padding: 150px 150px;
+    padding: 80px 50px;
     background-color: var(--secondary-color);
     border-radius: 10px;
     color: var(--primary-color);
@@ -133,4 +133,62 @@
 .contact-me a.btn {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* TAB */
+
+@media screen and (max-width: 1024px) {
+    .Home .hero {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .Home .info {
+        width: 100%;
+    }
+
+    .Home .img-container {
+        width: 80%;
+        height: 80%;
+    }
+
+    .Home .about .about-me {
+        height: fit-content;
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .Home .projects .all-projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .Home .contact .contact-me {
+        padding: 50px 30px;
+    }
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* MOBILE */
+
+@media screen and (max-width: 540px) {
+    .Home .img-container {
+        width: 100%;
+        height: 80%;
+    }
+
+    .Home .projects .all-projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 }

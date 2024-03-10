@@ -21,12 +21,12 @@ export default function Home() {
     <div className='Home'>
       <HeroSection height={100}>
         <div className="info" data-aos='fade-down'>
-            <h1>ADEGBEHINGBE, <span>Oluwakorede Joseph</span></h1>
-            <p>I am a <span>Software Developer</span></p>
-          </div>
+          <h1>ADEGBEHINGBE, <span>Oluwakorede Joseph</span></h1>
+          <p>I am a <span>Software Developer</span></p>
+        </div>
 
-          <div className="img-container" data-aos='fade-right'>
-            <img src="assets/images/joseph.jpg" alt="my pic" loading='lazy'/>
+        <div className="img-container" data-aos='fade-right'>
+          <img src="assets/images/joseph.jpg" alt="my pic" loading='lazy'/>
         </div>
       </HeroSection>
 

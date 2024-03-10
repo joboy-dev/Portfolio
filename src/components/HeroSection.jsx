@@ -1,4 +1,5 @@
 import useTheme from "../hooks/useTheme"
+// import './HeroSection.css'
 
 export default function HeroSection({children, height=100, textColor}) {
     const { mode } = useTheme()
@@ -7,6 +8,7 @@ export default function HeroSection({children, height=100, textColor}) {
     return (
         <section className={`hero ${mode}`} style={{
             height: `${height}dvh`,
+            color: textColor ?? (mode === 'light' ? '#0C1618' : '#F1F1F1'),
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -14,7 +16,6 @@ export default function HeroSection({children, height=100, textColor}) {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             gap: '50px',
-            color: textColor ?? (mode === 'light' ? '#0C1618' : '#F1F1F1'),
             // animation: 'fadeIn 1s linear 2s',
             // animationFillMode: 'backwards',
         }}>

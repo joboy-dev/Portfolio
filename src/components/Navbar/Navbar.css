@@ -1,9 +1,14 @@
-nav {
+.Navbar {
     height: 100%;
     width: 20%;
+    position: relative;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
     background: var(--primary-color);
     box-shadow: var(--box-shadow);
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -29,6 +34,7 @@ nav .img-container {
     background-color: var(--secondary-color);
     animation: fadeIn 0.5s linear 1s;
     animation-fill-mode: backwards;
+    margin: 10px auto;
 }
 
 nav .img-container img {
@@ -162,3 +168,46 @@ nav .mode {
 nav .mode.dark {
     background-color: var(--dark-background-color);
 }
+
+.Navbar .nav-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.Navbar .menu {
+    display: none;
+}
+
+.Navbar .cancel {
+    display: none;
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* TAB */
+
+@media screen and (max-width: 1024px) {
+    .Navbar {
+        width: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .Navbar .menu {
+        display: block;
+    }
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* MOBILE */
+
