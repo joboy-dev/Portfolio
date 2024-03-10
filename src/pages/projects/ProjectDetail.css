@@ -84,3 +84,47 @@
     border-radius: 10px;
     margin: 0;
 }
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* TAB */
+
+@media screen and (max-width: 1024px) {
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* MOBILE */
+
+@media screen and (max-width: 540px) {
+    .ProjectDetail .project-detail {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .ProjectDetail .project-detail .detail {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .ProjectDetail .project-detail .other-details {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .ProjectDetail .project-detail .metadata {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+}

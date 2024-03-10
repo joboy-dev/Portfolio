@@ -94,20 +94,10 @@
     .about-me .img-container {
         height: 50dvh;
         width: 100%;
-        border-radius: 10px;
-        overflow: hidden;
     }
 
     .about-me .content {
         width: 100%;
-        padding: 40px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 20px;
-        /* animation: fadeSlideDown 1s linear 2s;
-        animation-fill-mode: backwards; */
     }
 }
 

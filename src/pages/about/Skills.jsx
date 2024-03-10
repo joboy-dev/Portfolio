@@ -12,7 +12,7 @@ export default function Skills() {
       gap: '40px',
     }}>
       {skills.map((skill) => (
-        <SmallTabCard size={200} isOdd={true}>
+        <SmallTabCard size={150} isOdd={true}>
           <div className='smallcard-img'>
             <img src={skill.image} alt='' />
           </div>

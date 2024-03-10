@@ -183,7 +183,7 @@
 @media screen and (max-width: 540px) {
     .Home .img-container {
         width: 100%;
-        height: 80%;
+        height: 50%;
     }
 
     .Home .projects .all-projects {

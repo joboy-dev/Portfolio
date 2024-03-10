@@ -53,3 +53,39 @@
     font-weight: 600;
     margin-top: 2px;
 }
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* TAB */
+
+@media screen and (max-width: 1024px) {
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* MOBILE */
+
+@media screen and (max-width: 540px) {
+    .tabcard {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tabcard .img {
+        width: 60%;
+    }
+
+    .tabcard .tabcard-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+}

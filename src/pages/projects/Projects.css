@@ -21,23 +21,6 @@
     margin-bottom: 30px;
 }
 
-.head .title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
-    color: var(--light-text-color);
-}
-
-.head .title.dark {
-    color: var(--dark-text-color);
-}
-
-.head .title h1 {
-    font-weight: 900;
-    font-size: 1.4rem;
-}
-
 .head form select {
     height: 50px;
     width: 25dvw;
@@ -67,4 +50,46 @@
 
 .all-projects button:hover {
     scale: 1.02;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* TAB */
+
+@media screen and (max-width: 1024px) {
+    .all-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .head form select {
+        width: 35dvw;
+    }
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+/* MOBILE */
+
+@media screen and (max-width: 540px) {
+    .all-projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects-container .head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 30px;
+    }
+
+    .head form select {
+        width: 85dvw;
+    }
 }
