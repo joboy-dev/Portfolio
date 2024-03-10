@@ -21,6 +21,14 @@
     margin-bottom: 30px;
 }
 
+.head form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
 .head form select {
     height: 50px;
     width: 25dvw;
@@ -86,10 +94,10 @@
         justify-content: flex-start;
         flex-direction: column;
         gap: 0;
-        margin-bottom: 30px;
+        margin: 0 20px 30px;
     }
 
     .head form select {
-        width: 85dvw;
+        width: 70dvw;
     }
 }

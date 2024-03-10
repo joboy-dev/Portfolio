@@ -18,6 +18,11 @@ export default function Projects() {
     setShowAllProjects(true)
   }
 
+  const sendMessage = function(e) {
+    e.preventDefault()
+    console.log(filterValue.current.value);
+  }
+
   return (
     <div className={`Projects ${mode}`}>
       <HeroSection height={60}>
@@ -33,10 +38,16 @@ export default function Projects() {
         <div className="head">
           <SectionTitle faIcon={faFolder} title='ALL PROJECTS' />
 
-          <form onSubmit={() => {}}>
+          <form onSubmit={sendMessage}>
             <select ref={filterValue}>
-              <option value="1">One</option>
+              <option value="None">None Selected</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile App Development">Mobile App Development</option>
+              <option value="Backend Development">Backend Development</option>
+              <option value="Data Science">Data Science</option>
+              <option value="Frontend Development">Frontend Development</option>
             </select>
+            <button className='btn'>Filter</button>
           </form>
         </div>
         <div className="all-projects">
