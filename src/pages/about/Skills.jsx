@@ -1,5 +1,4 @@
 import SmallTabCard from '../../components/cards/SmallTabCard'
-
 import { skills } from '../../data/skills'
 
 export default function Skills() {

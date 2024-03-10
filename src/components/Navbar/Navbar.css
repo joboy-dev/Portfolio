@@ -26,8 +26,8 @@ nav.dark {
 }
 
 nav .img-container {
-    height: 120px;
-    width: 120px;
+    height: 125px;
+    width: 125px;
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid var(--dark-text-color);
