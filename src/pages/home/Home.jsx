@@ -54,7 +54,7 @@ export default function Home() {
         
         <div className="all-projects">
           {projects.slice(0, 3).map((project) => (
-            <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={''} />
+            <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={project.coverPicture} />
           ))}
         </div>
 

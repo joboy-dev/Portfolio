@@ -9,7 +9,7 @@ export default function ProjectCard({id, projectName, overview, coverPicture}) {
   return (
     <div className={`ProjectCard ${mode}`}>
       <div className="project-img">
-        <img src="assets/images/project-sample.jpg" alt="" />
+        <img src={coverPicture ?? "assets/images/project-sample.jpg"} alt="" />
       </div>
 
       <div className="details">

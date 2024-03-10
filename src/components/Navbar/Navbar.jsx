@@ -86,28 +86,28 @@ export default function Navbar() {
                         <div className='icon'>
                             <Icon icon={faHome} color='#004643' size={25} />
                         </div>
-                        <NavLink to={'/'}>Home</NavLink>
+                        <NavLink onClick={closeNavbar} to={'/'}>Home</NavLink>
                     </div>
 
                     <div className='link'>
                         <div className='icon'>
                             <Icon icon={faUser} color='#004643' size={25} />
                         </div>
-                        <NavLink to={'/about'}>About me</NavLink>
+                        <NavLink onClick={closeNavbar} to={'/about'}>About me</NavLink>
                     </div>
 
                     <div className='link'>
                         <div className='icon'>
                             <Icon icon={faFolder} color='#004643' size={25} />
                         </div>
-                        <NavLink to={'/projects'}>Projects</NavLink>
+                        <NavLink onClick={closeNavbar} to={'/projects'}>Projects</NavLink>
                     </div>
 
                     <div className='link'>
                         <div className='icon'>
                             <Icon icon={faPhone} color='#004643' size={25} />
                         </div>
-                        <NavLink to={'/contact'}>Contact me</NavLink>
+                        <NavLink onClick={closeNavbar} to={'/contact'}>Contact me</NavLink>
                     </div>
                 </div>
 

@@ -1,6 +1,7 @@
 import './Projects.css'
 import { faCode, faFolder } from '@fortawesome/free-solid-svg-icons'
 import { useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import HeroSection from '../../components/HeroSection'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
@@ -13,14 +14,12 @@ export default function Projects() {
   const { mode } =  useTheme()
   const filterValue = useRef()
   const [showAllProjects, setShowAllProjects] = useState(false)
-
-  const showAll = function() {
-    setShowAllProjects(true)
-  }
+  const navigate = useNavigate()
 
   const sendMessage = function(e) {
     e.preventDefault()
     console.log(filterValue.current.value);
+    navigate(`/projects?filter=${filterValue.current.value}`)
   }
 
   return (
@@ -52,12 +51,12 @@ export default function Projects() {
         </div>
         <div className="all-projects">
             {showAllProjects ? projects.map((project) => (
-              <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={''} />
+              <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={project.coverPicture} />
             )) : projects.slice(0, 6).map((project) => (
-              <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={''} />
+              <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={project.coverPicture} />
             ))}
 
-            {!showAllProjects && <button onClick={showAll}>Load more</button>}
+            {!showAllProjects && <button onClick={() => {setShowAllProjects(true)}}>Load more</button>}
         </div>
         </div>
     </div>
