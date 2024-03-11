@@ -10,11 +10,6 @@
     box-shadow: var(--dark-box-shadow);
 }
 
-.ProjectCard:hover {
-    translate: -10px;
-    scale: 1.02;
-}
-
 .ProjectCard .project-img {
     height: 250px;
     width: 100%;

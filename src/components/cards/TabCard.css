@@ -13,11 +13,6 @@
     padding: 25px 40px;
 }
 
-.tabcard:hover {
-    translate: -10px;
-    scale: 1.02;
-}
-
 .tabcard.dark {
     box-shadow: var(--dark-box-shadow);
 }
