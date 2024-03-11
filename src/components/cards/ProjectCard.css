@@ -1,5 +1,5 @@
 .ProjectCard {
-    height: fit-content;
+    height: 100%;
     width: 100%;
     background-color: var(--secondary-color);
     box-shadow: var(--light-box-shadow);
@@ -11,11 +11,11 @@
 }
 
 .ProjectCard .project-img {
-    height: 250px;
+    height: 150px;
     width: 100%;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
