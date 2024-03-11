@@ -11,15 +11,16 @@
 .ImageCarousel .image-container .image {
     height: 100%;
     width: 55%;
-    background-color: var(--secondary-color);
+    background-color: transparent;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .image img {
+    border: none;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* ------------------------------------------------------- */
@@ -32,9 +33,6 @@
     .ImageCarousel .image-container .image {
         height: 100%;
         width: 75%;
-        background-color: var(--secondary-color);
-        border-radius: 10px;
-        overflow: hidden;
     }
 }
 
@@ -47,10 +45,7 @@
 
 @media screen and (max-width: 540px) {
     .ImageCarousel .image-container .image {
-        height: 65%;
+        height: 100%;
         width: 75%;
-        background-color: var(--secondary-color);
-        border-radius: 10px;
-        overflow: hidden;
     }
 }

@@ -15,7 +15,6 @@ export default function ProjectDetail() {
 
     // Filtered object based on id from useParams
     const filteredProjects = projects.filter((proj) => proj.id === id )
-    console.log(filteredProjects.length);
     
     return filteredProjects.map((project) => (
         <div className='ProjectDetail'>
@@ -25,7 +24,7 @@ export default function ProjectDetail() {
                 </div>
             </HeroSection>
 
-            <ImageCarousel images={[]} />
+            <ImageCarousel images={project.images} />
 
             <div className={`project-detail ${mode}`}>
                 <div className="detail">

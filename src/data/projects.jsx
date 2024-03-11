@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 'Asyh53',
     name: "QR Quill",
-    overview: "This is a Flutter application designed to enable a user to create QR codes and any type of barcode. The user also has the ability to save the codes they create to their device and the user can also share the codes created with other people. The application works offline most of the time because IsarDB was integrated into the application and this provides offline functionality. The app also implements authentication using a PIN created by the user. A lot of data can be converted into a QR code such as Wifi passwords, email, text, URL, contact information, images(this required network connectivity), files(also needs internet to function), text messages, etc.",
+    overview: "This is a Flutter application designed to enable a user to create QR codes and any type of barcode. The user also has the ability to save the codes they create to their device and the user can also share the codes created with other people. The application works offline most of the time because IsarDB was integrated into the application and this provides offline functionality. The app also implements authentication using a PIN created by the user. A lot of data can be converted into a QR code such as Wifi passwords, email, text, URL, contact information, images (this requires network connectivity), files (also needs internet to function), text messages, etc.",
     coverPicture: "assets/data_images/projects/qrquill/cover.png",
     images: [],
     tools: ['Dart', 'Flutter', 'Provider- For state management', 'IsarDB- For database'],
@@ -38,7 +38,12 @@ export const projects = [
     name: "Time Guard",
     overview: "This is a Flutter application to help users monitor the amount of time spent on applications on their device. This application implements an authentication system where the user will have to login with their pin stored in the device's local storage. The app also leverages certain packages to collect data from each installed app on the user's device so as to get the total amount of time spent on each application. The users also have the ability to track certain apps so they get notifications when they exceed a limit set on each of the tracked applications. To top it off, charts are also used to visualize the screen time data for the user's device.",
     coverPicture: "assets/data_images/projects/timeguard/cover.png",
-    images: [],
+    images: [
+      '../assets/data_images/projects/timeguard/1.png', 
+      '../assets/data_images/projects/timeguard/2.png', 
+      '../assets/data_images/projects/timeguard/3.png', 
+      '../assets/data_images/projects/timeguard/4.png'
+    ],
     tools: ['Dart', 'Flutter', 'Provider- For state management', 'IsarDB- For database'],
     domain: "Mobile App Development",
     projectType: "Client",
