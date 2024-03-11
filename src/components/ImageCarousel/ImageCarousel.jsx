@@ -3,9 +3,11 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react'
 
 import Icon from '../../components/Icon'
+import useTheme from '../../hooks/useTheme'
 
 // images will be a list
 export default function ImageCarousel({images}) {
+  const { mode } = useTheme()
   const [imageIndex, setImageIndex] = useState(0)
   const [showBackButton, setShowBackButton] = useState(true)
   const [showFrontButton, setShowFrontButton] = useState(true)
@@ -38,7 +40,7 @@ export default function ImageCarousel({images}) {
   return (
     <div className='ImageCarousel'>
       <div className="image-container">
-          {!showBackButton ? <div></div> : <Icon icon={faArrowLeft} color='#d8e2dc' onClick={moveToPreviousImage} />}
+        {!showBackButton ? <div></div> : <Icon icon={faArrowLeft} color={mode === 'dark' ? '#d8e2dc' : '#004643'} onClick={moveToPreviousImage} />}
           <div className="image">
               {imageLength === 0 ? <img src="../assets/images/no-image.jpg" alt="" /> : images.map((imagePath, index) => (
                 <img key={index} src={imagePath} alt="" style={{
@@ -47,7 +49,7 @@ export default function ImageCarousel({images}) {
                 }}/>
               ))}
           </div>
-          {!showFrontButton ? <div></div> : <Icon icon={faArrowRight} color='#d8e2dc' onClick={moveToNextImage} />}
+        {!showFrontButton ? <div></div> : <Icon icon={faArrowRight} color={mode === 'dark' ? '#d8e2dc' : '#004643'} onClick={moveToNextImage} />}
       </div>
 
     </div>
