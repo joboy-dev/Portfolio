@@ -40,7 +40,7 @@ export default function ImageCarousel({images}) {
       <div className="image-container">
           {!showBackButton ? <div></div> : <Icon icon={faArrowLeft} color='#d8e2dc' onClick={moveToPreviousImage} />}
           <div className="image">
-              {imageLength === 0 ? <img src="assets/images/no-image.jpg" alt="" /> : images.map((imagePath, index) => (
+              {imageLength === 0 ? <img src="../assets/images/no-image.jpg" alt="" /> : images.map((imagePath, index) => (
                 <img key={index} src={imagePath} alt="" style={{
                   display: imageIndex === index ? 'block' : 'none',
                 }}/>
