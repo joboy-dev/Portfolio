@@ -22,11 +22,6 @@
     box-shadow: var(--dark-box-shadow);
 }
 
-.service-card:hover {
-    translate: -10px;
-    scale: 1.02;
-}
-
 .service-card .service-img {
     height: 120px;
     width: 120px;
