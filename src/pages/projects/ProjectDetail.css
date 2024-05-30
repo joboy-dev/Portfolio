@@ -50,8 +50,7 @@
 
 .ProjectDetail .project-detail .other-details {
     width: 37%;
-    /* height: fit-content; */
-    height: 80vh;
+    height: fit-content;
 }
 
 .ProjectDetail .project-detail .metadata {
@@ -110,6 +109,7 @@
         justify-content: space-between;
         flex-direction: column;
         gap: 30px;
+        height: 100vh;
     }
     
     .ProjectDetail .project-detail .detail {
