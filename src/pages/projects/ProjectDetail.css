@@ -14,6 +14,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 60px;
+    height: 80vh;
 }
 
 .ProjectDetail .project-detail.dark {

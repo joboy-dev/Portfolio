@@ -24,7 +24,7 @@ export default function ProjectDetail() {
                 </div>
             </HeroSection>
 
-            <ImageCarousel images={project.images} />
+            {project.images && <ImageCarousel images={project.images} />}
 
             <div className={`project-detail ${mode}`}>
                 <div className="detail">

@@ -1,7 +1,6 @@
 import './Projects.css'
 import { faCode, faFolder } from '@fortawesome/free-solid-svg-icons'
 import { useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 import HeroSection from '../../components/HeroSection'
 import SectionTitle from '../../components/SectionTitle/SectionTitle'
@@ -13,13 +12,20 @@ import { projects } from '../../data/projects'
 export default function Projects() {
   const { mode } =  useTheme()
   const filterValue = useRef()
-  const [showAllProjects, setShowAllProjects] = useState(false)
-  const navigate = useNavigate()
 
-  const sendMessage = function(e) {
+  // const [showAllProjects, setShowAllProjects] = useState(false)
+  
+  // Set a state property for filtering projects
+  const [filter, setFilter] = useState('All')
+
+  const filteredProjects = filter === 'All' 
+    ? projects 
+    : projects.filter(project => project.domain === filter)
+
+  const filterProjects = function(e) {
     e.preventDefault()
     console.log(filterValue.current.value);
-    navigate(`/projects?filter=${filterValue.current.value}`)
+    setFilter(filterValue.current.value)
   }
 
   return (
@@ -37,28 +43,32 @@ export default function Projects() {
         <div className="head">
           <SectionTitle faIcon={faFolder} title='ALL PROJECTS' />
 
-          <form onSubmit={sendMessage}>
+          <form onSubmit={filterProjects}>
             <select ref={filterValue}>
-              <option value="None">None Selected</option>
+              <option value="All">All Projects</option>
               <option value="Web Development">Web Development</option>
               <option value="Mobile App Development">Mobile App Development</option>
               <option value="Backend Development">Backend Development</option>
               <option value="Data Science">Data Science</option>
+              <option value="Machine Learning">Machine Learning</option>
               <option value="Frontend Development">Frontend Development</option>
             </select>
             <button className='btn'>Filter</button>
           </form>
         </div>
         <div className="all-projects">
-            {showAllProjects ? projects.map((project) => (
+            {/* {showAllProjects ? filteredProjects.map((project) => (
               <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={project.coverPicture} />
-            )) : projects.slice(0, 6).map((project) => (
+            )) : filteredProjects.slice(0, 6).map((project) => (
               <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={project.coverPicture} />
-            ))}
+            ))} */}
+            {/* {!showAllProjects && <button onClick={() => {setShowAllProjects(true)}}>Load more</button>} */}
 
-            {!showAllProjects && <button onClick={() => {setShowAllProjects(true)}}>Load more</button>}
+            {filteredProjects.length !== 0 ? filteredProjects.map((project) => (
+              <ProjectCard key={project.id} id={project.id} projectName={project.name} overview={project.overview} coverPicture={project.coverPicture} />
+          )) : <p className={`no-projects ${mode}`}>No projects available for this domain yet.</p> }
         </div>
-        </div>
+      </div>
     </div>
   )
 }
