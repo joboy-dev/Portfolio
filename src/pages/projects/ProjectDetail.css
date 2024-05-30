@@ -50,7 +50,8 @@
 
 .ProjectDetail .project-detail .other-details {
     width: 37%;
-    height: fit-content;
+    /* height: fit-content; */
+    height: 80vh;
 }
 
 .ProjectDetail .project-detail .metadata {
