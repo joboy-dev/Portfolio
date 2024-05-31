@@ -12,7 +12,7 @@
     padding: var(--padding);
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 60px;
     height: 80vh;
 }
@@ -106,10 +106,10 @@
     .ProjectDetail .project-detail {
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: column;
         gap: 30px;
-        height: 100vh;
+        height: fit-content;
     }
     
     .ProjectDetail .project-detail .detail {
