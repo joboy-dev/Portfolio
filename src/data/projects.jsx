@@ -31,7 +31,7 @@ export const projects = [
       '../assets/data_images/projects/qrquill/7.png',
       '../assets/data_images/projects/qrquill/8.png',
     ],
-    tools: ['Dart', 'Flutter', 'Provider- For state management', 'IsarDB- For database'],
+    tools: ['Dart', 'Flutter', 'Provider- For state management', 'IsarDB- For local database'],
     domain: "Mobile App Development",
     projectType: "Personal",
     role: "Mobile App Developer",
