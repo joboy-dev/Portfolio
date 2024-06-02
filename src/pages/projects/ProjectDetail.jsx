@@ -7,7 +7,7 @@ import HeroSection from '../../components/HeroSection'
 import ImageCarousel from '../../components/ImageCarousel/ImageCarousel'
 import Icon from '../../components/Icon'
 import { faFigma, faGithub, faGoogleDrive } from '@fortawesome/free-brands-svg-icons'
-import { faCode, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 export default function ProjectDetail() {
     const { id } = useParams()
@@ -49,7 +49,7 @@ export default function ProjectDetail() {
                     <div className="metadata-links">
                         <Link className='btn' target='_blank' to={project.githubLink}><Icon icon={faGithub} size={50} /></Link>
 
-                        {project.postmanLink && <Link className='btn' target='_blank' to={project.postmanLink}><Icon icon={faCode} size={50} /></Link>}
+                        {project.postmanLink && <Link className='btn' target='_blank' to={project.postmanLink}><img src="..//assets/data_images/skills/postman.svg" alt="postman" width={50} height={50}/></Link>}
 
                         {project.googleDriveLink && <Link className='btn' target='_blank' to={project.googleDriveLink}><Icon icon={faGoogleDrive} size={50} /></Link>}
 

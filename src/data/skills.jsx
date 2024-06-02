@@ -22,5 +22,6 @@ export const skills = [
     {name: 'Docker', proficiency: 75, image: 'assets/data_images/skills/docker.svg'},
     {name: 'Git', proficiency: 85, image: 'assets/data_images/skills/git.svg'},
     {name: 'Github', proficiency: 95, image: 'assets/data_images/skills/github.svg'},
+    {name: 'Postman', proficiency: 85, image: 'assets/data_images/skills/postman.svg'},
     {name: 'Figma', proficiency: 70, image: 'assets/data_images/skills/figma.svg'},
 ]
