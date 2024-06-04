@@ -24,7 +24,6 @@ export default function Projects() {
 
   const filterProjects = function(e) {
     e.preventDefault()
-    console.log(filterValue.current.value);
     setFilter(filterValue.current.value)
   }
 
@@ -46,12 +45,10 @@ export default function Projects() {
           <form onSubmit={filterProjects}>
             <select ref={filterValue}>
               <option value="All">All Projects</option>
-              <option value="Web Development">Web Development</option>
               <option value="Mobile App Development">Mobile App Development</option>
+              <option value="Web Development">Web Development</option>
               <option value="Backend Development">Backend Development</option>
-              <option value="Data Science">Data Science</option>
-              <option value="Machine Learning">Machine Learning</option>
-              <option value="Frontend Development">Frontend Development</option>
+              <option value="Data Science and Machine Learning">Data Science and Machine Learning</option>
             </select>
             <button className='btn'>Filter</button>
           </form>
