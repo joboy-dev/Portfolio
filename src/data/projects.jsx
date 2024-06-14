@@ -133,6 +133,23 @@ export const projects = [
   },
 
   {
+    id: '1qw!3',
+    name: "Air Quality Prediction System",
+    overview: "This project focuses on collecting Air Auality Index data from https://aqicn.org/city/nigeria/abuja/us-embassy/ and adding it to a csv file to build a dataset for model training to predict air quality.\nThis project is solely focused on Abuja as it is the only place in Nigeria with a working AQI monitor.",
+    coverPicture: '/assets/data_images/data.png',
+    images: null,
+    tools: ['Python', 'Numpy', 'Pandas', 'Scikit-Learn- For model training', 'Jupyter notebook', 'Github actions'],
+    domain: "Data Science",
+    projectType: "Personal",
+    role: "Data Scientist",
+    githubLink: "https://github.com/joboy-dev/AQI-Project",
+    postmanLink: null,
+    liveLink: 'https://aqi-predictor.streamlit.app/',
+    googleDriveLink: null,
+    figmaLink: null,
+  },
+
+  {
     id: '1x2!2',
     name: "DoXpress",
     overview: "This is an application that allows you to easily organnize tasks. The users can login, sign up, edit details, create todos and categprize them based on priority. If a user does not complete a task before the set date and time of completion, the task will be marked as expired and the user will be limited to just deleting the todo.",
