@@ -135,7 +135,7 @@ export const projects = [
   {
     id: '1qw!3',
     name: "Air Quality Prediction System",
-    overview: "This project focuses on collecting Air Auality Index data from https://aqicn.org/city/nigeria/abuja/us-embassy/ and adding it to a csv file to build a dataset for model training to predict air quality.\nThis project is solely focused on Abuja as it is the only place in Nigeria with a working AQI monitor.",
+    overview: "This project focuses on collecting Air Auality Index data from:\nhttps://aqicn.org/city/nigeria/abuja/us-embassy/.\nThen the data collected is added to a csv file to build a dataset for model training to predict air quality.\nThis project is solely focused on Abuja as it is the only place in Nigeria with a working AQI monitor.\n\nEvery hour, the data is collected and added to the dataset, and every week on a Sunday, the model is retrained.",
     coverPicture: '/assets/data_images/data.png',
     images: null,
     tools: ['Python', 'Numpy', 'Pandas', 'Scikit-Learn- For model training', 'Jupyter notebook', 'Github actions'],
