@@ -138,7 +138,7 @@ export const projects = [
     overview: "This project focuses on collecting Air Auality Index data from:\nhttps://aqicn.org/city/nigeria/abuja/us-embassy/.\nThen the data collected is added to a csv file to build a dataset for model training to predict air quality.\nThis project is solely focused on Abuja as it is the only place in Nigeria with a working AQI monitor.\n\nEvery hour, the data is collected and added to the dataset, and every week on a Sunday, the model is retrained.",
     coverPicture: '/assets/data_images/data.png',
     images: null,
-    tools: ['Python', 'Numpy', 'Pandas', 'Scikit-Learn- For model training', 'Jupyter notebook', 'Github actions'],
+    tools: ['Python', 'Beautiful soup- For web scraping of relevant data', 'Numpy', 'Pandas', 'Scikit-Learn- For model training', 'Jupyter notebook', 'Github actions- For scheduling', 'Pickle- For model saving', 'Streamlit- To create web app for user interaction and model testing'],
     domain: "Data Science",
     projectType: "Personal",
     role: "Data Scientist",
